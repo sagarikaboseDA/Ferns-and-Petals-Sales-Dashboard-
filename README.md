@@ -2,8 +2,9 @@
 Business Intelligence project using Excel with data transformation, modeling, and dashboard visualization
 
 # Project Overview
-This project demonstrates end-to-end **Business Intelligence (BI) workflow** using Excel/Power Query/Power Pivot.  
-The goal was to combine multiple datasets (Customers, Orders, Products) into a **data model**, perform **data transformation**, add calculated columns, and build a **sales dashboard** with KPIs and insights.  
+The purpose of this analysis was to build a comprehensive sales and performance dashboard that could provide actionable insights into customer behavior, product performance, and overall business health. The intent behind conducting this exercise was to transform raw datasets into meaningful metrics that allow business stakeholders to track trends, identify growth opportunities, and evaluate efficiency.
+
+Initially, I started with three different datasets: Customers, Orders, and Products. These datasets were in their raw form and carried redundant, unstructured, and disconnected information. To extract value, I had to design a structured data model that could establish relationships between these datasets and ultimately generate a single combined dataset ready for analysis and visualization.This project demonstrates end-to-end **Business Intelligence (BI) workflow** using Excel/Power Query/Power Pivot. The goal was to combine multiple datasets (Customers, Orders, Products) into a **data model**, perform **data transformation**, add calculated columns, and build a **sales dashboard** with KPIs and insights.  
 
 # Steps Performed  
 1. **Data Transformation**  

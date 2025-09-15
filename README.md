@@ -8,21 +8,31 @@ Initially, I started with three different datasets: Customers, Orders, and Produ
 
 # Steps Performed  
 1. **Data Transformation**  
-   - Cleaned and standardized Customers, Orders, and Products datasets.  
-   - Created relationships using keys (CustomerID, ProductID).  
+   - The first step was to clean and prepare the raw datasets. Each dataset had unique information:
+   - Customers dataset contained details of buyers (name, ID, region, contact).
+   - Orders dataset captured transactional data such as date, order quantity, price, and discounts.
+   - Products dataset provided product-level details including category, sub-division, and price.
+   - Using Power Query and transformation techniques, I standardized the formats, ensured date fields were uniform, and handled missing or duplicate values. I then performed data modeling by creating relationships between primary and foreign keys (for example, CustomerID linking Customers and Orders, and ProductID linking Orders and Products). This step allowed me to establish a relational structure so that insights could flow seamlessly across tables.  
 
 2. **Data Modeling**  
-   - Built a star schema with Orders as fact table.  
-   - Added calculated columns (Revenue, Profit Margin, Final Payable Amount).  
+   - Built a star schema with Orders as fact table, Customers and Products as Dimensional table. 
+   - Added calculated columns (Revenue, Profit Margin, Final Payable Amount).
+   - Total Revenue = Quantity × Price – Discounts + Taxes
 
 3. **Analysis**  
-   - Performed **Month-on-Month (MOM)** analysis.  
+   - Performed **Month-on-Month (MOM)** analysis. Understanding growth over time was central to the analysis. I created Month-on-Month (MOM) comparisons to track how sales, revenue, and customer engagement evolved. MOM analysis highlighted short-term growth trends (e.g., seasonal sales spikes). This provided both operational and strategic perspectives.
    - Identified top products, high-value customers, ocassion based order frequency, type of items majorly preferred based on various ocassions, peak hours of receiving orders, orders received maximum by weekddays and regional sales trends.
    - Calculated Total Sales, Average Sales, Average customer satisfaction rating, Total items sold.
 
 4. **Dashboard Visualization**  
    - Used Pivot Tables and Charts to build an interactive dashboard.  
    - Included KPIs like Sales Growth, Average Sales and Customer Satisfaction Rating.
+   - Key visualization elements included:
+   - Sales by Region & Sub-division for geographical insights.
+   - Revenue vs Category/Items Trend to monitor pricing strategies as per products with maximum influx of revenue and customer engagement.
+   - Top Products & Top Regions contributing to overall revenue.
+   - MOM Sales Chart to detect growth patterns.
+The final Dashboard offered a consolidated view of the business, allowing decision-makers to filter by time, product category, or region.
 
 # Key Insights  
 - North region generated highest revenue contribution.    
